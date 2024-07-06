@@ -9,38 +9,45 @@ body {
 
 .btn-common {
     border: 1px solid #FF7F3E;
-    padding: 10px;
+    padding: 10px 35px 10px 35px;
     background-color: #FF7F3E;
     color: #fff;
     border-radius: 13px 0px 13px 0px;
+    margin-right: 10px;
+
 }
 
 .btn-common:hover {
     border: 1px solid #070707f3;
-    padding: 10px;
+    padding: 10px 35px 10px 35px;
     background-color: #070707f3;
     color: #fff;
     border-radius: 13px 0px 13px 0px;
     transition: all 0.3s ease;
+
     /* Example transition duration */
 }
 
 .btn-common-black {
     border: 1px solid #070707f3;
-    padding: 10px;
+    padding: 10px 35px 10px 35px;
     background-color: #070707f3;
     color: #fff;
     border-radius: 13px 0px 13px 0px;
+
+
 }
 
 .btn-common-black:hover {
 
     border: 1px solid #FF7F3E;
-    padding: 10px;
+    padding: 10px 35px 10px 35px;
     background-color: #FF7F3E;
     color: #fff;
     border-radius: 13px 0px 13px 0px;
     transition: all 0.3s ease;
+
+
     /* Example transition duration */
 }
 
@@ -150,7 +157,7 @@ body {
 }
 
 .input-wrapper input.form-control:hover {
-    outline: none; 
+    outline: none;
 }
 
 .input-wrapper .search-button {
@@ -159,26 +166,27 @@ body {
     right: 12px;
     border-radius: 0 5px 5px 0;
 }
-.btn-comman-search{
+
+.btn-comman-search {
     border: 1px solid #FF7F3E;
     background-color: #FF7F3E;
     color: #fff;
     width: 90px;
 }
 
-.btn-comman-search:hover{
+.btn-comman-search:hover {
     border: 1px solid #0f0f0f;
     background-color: #0f0f0f;
     color: #fff;
 }
 
 /* footer Start  */
-footer{
+footer {
     margin-top: 100px;
 }
 
 .menu-list {
-    list-style: none; 
+    list-style: none;
     padding: 0;
 }
 
@@ -187,7 +195,7 @@ footer{
 }
 
 /* Footer  */
-.fa-facebook{
+.fa-facebook {
     border: 1px solid #0f0f0f;
     padding: 8px;
     border-radius: 50%;
@@ -196,7 +204,7 @@ footer{
     text-align: center;
 }
 
-.fa-youtube{
+.fa-youtube {
     border: 1px solid #0f0f0f;
     padding: 8px;
     border-radius: 50%;
@@ -205,7 +213,7 @@ footer{
     text-align: center;
 }
 
-.fa-linkedin-in{
+.fa-linkedin-in {
     border: 1px solid #0f0f0f;
     padding: 8px;
     border-radius: 50%;
