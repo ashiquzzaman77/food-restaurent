@@ -7,6 +7,15 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.social-midea-icon-banner {
+    /* border: 1px solid #c5c2c2; */
+    padding: 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
 .btn-common {
     border: 1px solid #FF7F3E;
     padding: 10px 35px 10px 35px;
@@ -118,6 +127,12 @@ body {
     margin-top: 100px;
 }
 
+#client
+{
+    background-color: #FCF8F3;
+    padding-bottom: 100px;
+}
+
 /* Footer Top Banner */
 #footer-top-banner {
     margin-top: 100px;
@@ -195,29 +210,103 @@ footer {
 }
 
 /* Footer  */
-.fa-facebook {
-    border: 1px solid #0f0f0f;
-    padding: 8px;
+.social-midea-icon {
+    border: 1px solid #c5c2c2;
+    padding: 6px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     text-align: center;
 }
 
-.fa-youtube {
-    border: 1px solid #0f0f0f;
-    padding: 8px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
+/* ========================================== */
+
+.icon-color{
+    color: #FF7F3E;
+    padding: 10px;
 }
 
-.fa-linkedin-in {
-    border: 1px solid #0f0f0f;
-    padding: 8px;
+.wrapper {
+    
+    width: 100%;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border: none;
+}
+
+.carousel .card .img {
+    position: relative;
+    height: 148px;
+    width: 148px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
+}
+
+.card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+
+.carousel .card span {
+    color: #6A6D78;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
 }
